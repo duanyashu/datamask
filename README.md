@@ -1,7 +1,8 @@
+## 基于接口的数据脱敏工具
 
 > 本工具通过接口实现数据脱敏，不会改变原始数据结构和类型（有些方法是通过将数据转为json实现，这样如果项目中还有其他需要对结果进行转换的方法就不能实现了）。
 
-##### 仓库坐标
+#### 仓库坐标
 ```xml
  <dependency>
       <groupId>com.github.duanyashu</groupId>
@@ -23,7 +24,7 @@ springboot 在项目启动类上添加上包路径（注意：需要将本工具
 
 ```
 
- 2. DesensitiveApi 实体字段注解
+ 2. **DesensitiveApi 实体字段注解**
 
    
 
@@ -37,6 +38,6 @@ springboot 在项目启动类上添加上包路径（注意：需要将本工具
   padStr 替换的字符
   separator 分隔符 （eg:邮箱的“@”，座机的“-”）
 ```
- 3. DesensitiveApi 接口类，方法注解
+ 3. **DesensitiveApi 接口类，方法注解**
 
     在需要脱敏的接口上或者类上添加上这个注解
